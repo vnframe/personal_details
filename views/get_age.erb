@@ -1,6 +1,7 @@
-Hello, <%= name %>! How old are you?
+Hello, <%= name %> <%= last%>! How old are you?
 <form method = "post" action = "/age">
   <input type = "hidden" name = "user_name" value = <%=name%>>
+  <input type = "hidden" name = "last_name" value = <%=last%>>
   <input type = "number" min = "1" max = "150" name = "user_age">
   <input type = "submit">
 </form>
