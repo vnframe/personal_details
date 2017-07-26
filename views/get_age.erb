@@ -1,2 +1,6 @@
-Hello, <%= name %>!
-<a href= "/three_numbers"> desc </a>
+Hello, <%= name %>! How old are you?
+<form method = "post" action = "/age">
+  <input type = "hidden" name = "user_name" value = <%=name%>>
+  <input type = "number" min = "1" max = "150" name = "user_age">
+  <input type = "submit">
+</form>
