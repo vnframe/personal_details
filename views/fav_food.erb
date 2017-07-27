@@ -1,0 +1,10 @@
+You have <%= hair%> hair and <%= eyes%> eyes? Awesome. What is your favorite food?
+<form method = "post" action = "/favfood">
+<input type= "hidden" name = "user_name" value= <%= name%>>
+<input type= "hidden" name = "user_age" value= <%= age%>>
+<input type= "hidden" name = "hair_colour" value= <%= hair%>>
+<input type= "hidden" name = "eye_colour" value= <%= eyes%>>
+<input type= "hidden" name = "last_name" value= <%= last%>>
+<input type = "text" name = "fav_food">
+<input type = "submit">
+</form>
