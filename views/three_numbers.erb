@@ -1,12 +1,16 @@
-So <%= name%> <%= last %>, you are <%= age%>.
+So you like <%= drink%>? Me too! We have a lot in common!
 What are your three favorite numbers under 100?
 <form method= "post" action='/three_numbers'>
   <input type= "hidden" name = "user_name" value= <%= name%>>
   <input type= "hidden" name = "user_age" value= <%= age%>>
+  <input type= "hidden" name = "hair_colour" value= <%= hair%>
+  <input type= "hidden" name = "eye_colour" value= <%= eyes%>>
+  <input type= "hidden" name = "fave_food" value= <%= food%>>
+  <input type= "hidden" name = "fav_drink" value= <%= drink%>>
   <input type= "number" min="1" max="100" name= "favenum1">
   <input type= "number" min="1" max="100" name= "favenum2">
   <input type= "number" min="1" max="100" name= "favenum3">
-  <input type= "hidden" name = "last_name" value= <%= last>>
+  <input type= "hidden" name = "last_name" value= <%= last%>>
 
   <input type="submit">
 </form>

@@ -1,10 +1,10 @@
-So you like <%= food%>? I like <%=food%>, too! What is your favorite drink?
+You are <%= name%> <%= last%> and you are <%= age%> years old with <%= eyes%> eyes. So you like <%= food%>? I like <%=food%>, too! What is your favorite drink?
 <form method = "post" action = "/favdrink">
 <input type= "hidden" name = "user_name" value= <%= name%>>
 <input type= "hidden" name = "user_age" value= <%= age%>>
-<input type= "hidden" name = "hair_colour" value= <%= hair%>
+<input type= "hidden" name = "hair_colour" value= <%= hair%>>
 <input type= "hidden" name = "eye_colour" value= <%= eyes%>>
-<input type= "hidden" name = "fave_food" value= <%= food%>>
+<input type= "hidden" name = "fav_food" value= <%= food%>>
 <input type= "hidden" name = "last_name" value= <%= last%>>
 <input type = "text" name = "fav_drink">
 <input type = "submit">

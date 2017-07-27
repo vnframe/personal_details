@@ -74,13 +74,26 @@ get '/favdrink' do
   hair = params[:hair_colour]
   eyes = params[:eye_colour]
   food = params[:fav_food]
-  puts "user age is #{age}"
   erb :fav_drink, :locals => {:name => name, :last => last, :age => age, :hair => hair, :eyes => eyes, :food => food}
+end
+post '/favdrink' do
+  age = params[:user_age]
+  name = params[:user_name]
+  last = params[:last_name]
+  hair = params[:hair_colour]
+  eyes = params[:eye_colour]
+  food = params[:fav_food]
+  drink = params[:fav_drink]
+  redirect 'three_numbers?user_name=' + name + '&last_name=' + last + '&user_age=' + age + '&hair_colour=' + hair + '&eye_colour=' + eyes + '&fav_food=' + food + '&fav_drink=' + drink
 end
 # get '/three_numbers' do
 #   age = params[:age]
 #   name = params[:user_name]
 #   last = params[:last_name]
+#   hair = params[:hair_colour]
+#   eyes = params[:eye_colour]
+#   food = params[:fav_food]
+#   drink = params[:fave_drink]
 #   erb :three_numbers, :locals => {:name => name, :age => age, :last => last}
 # end
 # post '/three_numbers' do
